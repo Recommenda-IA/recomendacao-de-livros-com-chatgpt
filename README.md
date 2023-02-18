@@ -8,4 +8,4 @@ Nesse projeto utilizei o serviço da OpenAi para gerar 10 recomendações de liv
 
 # Considerações
 
-O projeto partiu de um fork do repositório da ([Finxter](https://github.com/finxter/vercel-openai)), e foi baseado neste excelente artigo [ChatGPT at the Heart – Building a Movie Recommendation Python Web App in 2023](https://blog.finxter.com/building-a-movie-recommendation-app-with-chatgpt/?tl_inbound=1&tl_target_all=1&tl_form_type=1&tl_period_type=3).
+O projeto partiu de um fork do repositório da [Finxter](https://github.com/finxter/vercel-openai), e foi baseado neste excelente artigo [ChatGPT at the Heart – Building a Movie Recommendation Python Web App in 2023](https://blog.finxter.com/building-a-movie-recommendation-app-with-chatgpt/?tl_inbound=1&tl_target_all=1&tl_form_type=1&tl_period_type=3).
