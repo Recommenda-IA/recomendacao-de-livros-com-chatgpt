@@ -1,20 +1,20 @@
 <!DOCTYPE html>
+
 <head>
-  <title>OpenAI Movies</title>
-  <link
-    rel="shortcut icon"
-    href="{{ url_for('static', filename='movie.png') }}"
-  />
+  <title>Recomendação de livros com OpenAI</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='livros.png') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='movie.png') }}" class="icon" />
-  <h3>Recommend the top movies</h3>
+  <img src="{{ url_for('static', filename='livros.png') }}" class="icon" />
+  <h3>Recomendação de livros com ChatGPT</h3>
   <form action="/" method="post">
-    <input type="text" name="number" placeholder="How many proposals, e.g. 1,3,10" required />
-    <input type="text" name="category" placeholder="Enter the category e.g. thriller, comedy" required />
-    <input type="submit" value="Generate titles" />
+    <label for="book">
+      <h4>Entre com o nome do livro que você já leu:</h4>
+    </label>
+    <input type="text" name="book" placeholder="Nome do livro" required />
+    <input type="submit" value="Gerar recomendações" />
   </form>
   {% if result %}
   <div class="result">

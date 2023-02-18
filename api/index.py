@@ -1,4 +1,5 @@
-import os, openai
+import os
+import openai
 from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
@@ -8,13 +9,12 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
-        category = request.form["category"]
-        number = request.form["number"]
+        book = request.form["book"]
         response = openai.Completion.create(
             model="text-davinci-003",
-            prompt=generate_prompt(number, category),
+            prompt=generate_prompt(book),
             temperature=0.5,
-            max_tokens=60,
+            max_tokens=600,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0
@@ -23,16 +23,14 @@ def index():
         return redirect(url_for("index", result=response.choices[0].text))
 
     result = request.args.get("result")
+
     return render_template("index.html", result=result)
 
 
-def generate_prompt(number, category):
-    return """Recommend the best {} {} movies to watch:""".format(number,
-        category.capitalize()
-    )
-
+def generate_prompt(book):
+    return """10 livros recomendados para quem leu {} e lojas para comprar:""".format(book.capitalize()
+                                                                                      )
 
 
 if __name__ == '__main__':
-  app.run(host='127.0.0.1', port=5050, debug=True)
-  
+    app.run(host='127.0.0.1', port=5050, debug=True)
