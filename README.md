@@ -4,6 +4,8 @@ Nesse projeto utilizei o serviço da OpenAi para gerar 10 recomendações de liv
 
 # Tela do projeto
 
+Resultados para quem leu Harry Potter.
+
 ![](https://github.com/Recommenda-IA/recomendacao-de-livros-com-chatgpt/blob/main/assets/Recomenda%C3%A7%C3%A3o-de-livros-com-OpenAI.png)
 
 # Considerações
