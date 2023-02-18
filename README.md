@@ -4,7 +4,7 @@ Nesse projeto utilizei o serviço da OpenAi para gerar 10 recomendações de liv
 
 # Tela do projeto
 
-![Tela do projeto]([https://github.com/casjunior93/recomendacao-de-livros-com-chatgpt/blob/main/assets/Recomendação-de-livros-com-OpenAI.png](https://github.com/Recommenda-IA/recomendacao-de-livros-com-chatgpt/blob/main/assets/Recomenda%C3%A7%C3%A3o-de-livros-com-OpenAI.png))
+![](https://github.com/Recommenda-IA/recomendacao-de-livros-com-chatgpt/blob/main/assets/Recomenda%C3%A7%C3%A3o-de-livros-com-OpenAI.png)
 
 # Considerações
 
