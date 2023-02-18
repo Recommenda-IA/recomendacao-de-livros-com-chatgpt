@@ -1,6 +1,6 @@
 # Sistema de recomendação de livros com ChatGPT e Flask
 
-Nesse projeto utilizei o serviço da OpenAi para gerar 10 recomendações de livros baseados em um livro informado e informar também onde o livro pode ser comprado. Para a consulta ao ChatGPT, utilizei o comando: 10 livros recomendados para quem leu {livro} e lojas para comprar. O resultado foi muito convincente e confesso que já li mais da metade da lista que foi recomendada para quem já leu Harry Potter rs.
+Nesse projeto utilizei o serviço da OpenAi para gerar 10 recomendações de livros e seus resumos baseados em um livro informado. Para a consulta à OpenAi, utilizei o comando: 10 livros recomendados para quem leu {livro} com resumos. O resultado foi muito convincente e confesso que já li mais da metade da lista que foi recomendada para quem já leu Harry Potter rs.
 
 # Tela do projeto
 
