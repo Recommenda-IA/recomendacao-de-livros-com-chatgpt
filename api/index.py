@@ -14,7 +14,7 @@ def index():
             model="text-davinci-003",
             prompt=generate_prompt(book),
             temperature=0.5,
-            max_tokens=600,
+            max_tokens=4000,
             top_p=1,
             frequency_penalty=0,
             presence_penalty=0
@@ -28,8 +28,8 @@ def index():
 
 
 def generate_prompt(book):
-    return """10 livros recomendados para quem leu {} e lojas para comprar:""".format(book.capitalize()
-                                                                                      )
+    return """10 livros recomendados para quem leu {} com resumos:""".format(book.capitalize()
+                                                                             )
 
 
 if __name__ == '__main__':
